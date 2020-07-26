@@ -4,32 +4,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="amal-pn">
-    
+
     <meta name="description" content="AngularJS Directive for restricting the input values typed in to an input element based on a REGEX
     pattern.">
-    
+
     <title>AngularJS Input Restrict Directive</title>
 </head>
 
 <body ng-controller="AppCtrl">
     <strong> AngularJS Directive for restricting the input values typed in to an input element based on a REGEX
         pattern.</strong>
-        
-        <hr />
-        
-        Digits : <input ng-model="val1" placeholder="123.." restrict-pattern="^[\d]*$" /> Model Value: {{val1}}<br />
-        Alpanumerics or underscore : <input ng-model="val2" placeholder="abc123_" restrict-pattern="^[\w]*$" /> Model Value:
-        {{val2}}<br />
-        Lower-Case Letters : <input ng-model="val3" placeholder="abc..." restrict-pattern="^[a-z]*$" /> Model Value:
-        {{val3}}<br />
-        Upper-Case Letters : <input ng-model="val4" placeholder="ABC..." restrict-pattern="^[A-Z]*$" /> Model Value:
-        {{val4}}<br />
-        
-        
-        
-        <!--scripts-->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
-        <script src="inputRestrictDirective.js"></script>
-    </body>
+
+    <hr />
+
+    Digits : <input ng-model="val1" placeholder="123.." restrict-pattern="^[\d]*$" /> 
+    Model Value: {{val1}}<br />
+    Alpanumerics or underscore : <input ng-model="val2" placeholder="abc123_" restrict-pattern="^[\w]*$" /> 
+    Model Value: {{val2}}<br />
+    Lower-Case Letters : <input ng-model="val3" placeholder="abc..." restrict-pattern="^[a-z]*$" /> 
+    Model Value: {{val3}}<br />
+    Upper-Case Letters : <input ng-model="val4" placeholder="ABC..." restrict-pattern="^[A-Z]*$" /> 
+    Model Value: {{val4}}<br />
+    Percentage value with upto two decimal places : <input ng-model="val4" placeholder="ABC..." 
+        restrict-pattern = "(^100$)|(^\d{1,2}$)|(^[1-9]{0,1}[0-9]{1}\.\d{0,2}$)|(^[1-9]{1}[0-9]{1}$)" /> 
+    Model Value: {{val4}}<br />
     
-    </html>
+
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+    <script src="inputRestrictDirective.js"></script>
+</body>
+
+</html>
