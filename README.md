@@ -6,4 +6,4 @@ Add the attribute 'restrict-pattern' to the input element and pass the appropria
 <input restrict-pattern="regex" />
 ```
 
-jsFiddle : https://jsfiddle.net/g0dq8jsp/2/ 
+Example : https://jsfiddle.net/g0dq8jsp/2/ 
